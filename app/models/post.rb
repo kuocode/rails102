@@ -3,5 +3,5 @@ class Post < ApplicationRecord
     belongs_to :group
 
     validates :content, presence: true
-    scope :recent, -> {order("cerated_at DESC")}
+    scope :recent, -> { order("created_at DESC")}
 end
