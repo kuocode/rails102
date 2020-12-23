@@ -11,6 +11,10 @@ Rails.application.routes.draw do
         # resources :jobs 自动创建遵循 RESTful 的 url 格式。
     end
 
+    namespace :account do
+        resources :groups
+    end
+
     root 'groups#index'
 
 end
